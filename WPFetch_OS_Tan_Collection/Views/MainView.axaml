@@ -13,7 +13,9 @@
   </Design.DataContext>
 
 	<StackPanel>
-      <TextBlock Text="Welcome to WPFetch OS-Tan Collection!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-	  <Image Source="/Assets/appicon.ico" Width="30" Height="30"/>
+      <TextBlock Text="Welcome to WPFetch OS-Tan Collection!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+	  <Image Source="/Assets/appicon.ico" MaxHeight="100" MaxWidth="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<TextBlock Text="Coming Soon !" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+		<Button Command="{Binding SetDownloadButtonCommand}" Content="Download the Windows Version!" HorizontalAlignment="Center" VerticalAlignment="Center" />
 	</StackPanel>
 </UserControl>

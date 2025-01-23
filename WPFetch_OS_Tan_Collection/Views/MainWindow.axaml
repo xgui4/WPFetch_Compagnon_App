@@ -7,6 +7,6 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="WPFetch_OS_Tan_Collection.Views.MainWindow"
         Icon="../Assets/appicon.ico"
-        Title="WPFetch_OS_Tan_Collection">
+        Title="WPFetch : OS Tan Collection">
         <views:MainView />
 </Window>

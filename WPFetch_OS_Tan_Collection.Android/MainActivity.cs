@@ -7,7 +7,7 @@ using Avalonia.Android;
 namespace WPFetch_OS_Tan_Collection.Android;
 
 [Activity(
-    Label = "WPFetch_OS_Tan_Collection.Android",
+    Label = "WPFetch: OS Tan Collection",
     Theme = "@style/MyTheme.NoActionBar",
     Icon = "@drawable/icon",
     MainLauncher = true,
