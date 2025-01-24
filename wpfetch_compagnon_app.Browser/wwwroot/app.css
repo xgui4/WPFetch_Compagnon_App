@@ -28,7 +28,7 @@
 
 @media (prefers-color-scheme: dark) {
     .avalonia-splash {
-        background: #1b2a4e;
+        background: black;
     }
 
     .avalonia-splash h2 {
