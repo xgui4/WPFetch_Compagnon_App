@@ -1,0 +1,43 @@
+<UserControl
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="wpfetch_compagnon_app.Views.MainView"
+    x:DataType="vm:MainViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:wpfetch_compagnon_app.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.DataContext>
+        <!--
+            This only sets the DataContext for the previewer in an IDE,
+            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
+        -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+    <StackPanel>
+        <TextBlock
+            FontSize="30"
+            HorizontalAlignment="Center"
+            Text="Welcome to WPFetch OS-Tan Collection!"
+            VerticalAlignment="Center" />
+        <Image
+            HorizontalAlignment="Center"
+            MaxHeight="100"
+            MaxWidth="100"
+            Source="/Assets/appicon.ico"
+            VerticalAlignment="Center" />
+        <TextBlock
+            FontSize="50"
+            HorizontalAlignment="Center"
+            Text="Coming Soon !"
+            VerticalAlignment="Center" />
+        <Button
+            Command="{Binding SetDownloadButtonCommand}"
+            Content="Download the Windows Version!"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+    </StackPanel>
+</UserControl>
