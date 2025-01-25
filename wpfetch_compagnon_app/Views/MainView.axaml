@@ -38,7 +38,19 @@
             Text="This app is a work in progress"
             VerticalAlignment="Center" />
 
-        <local:OsTanCollection />
+		<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+
+			<Button Content="⬅" Command="{Binding SetBackwardButtonCommand}"/>
+
+			<Image Source="{Binding OsTanImg}" MaxWidth="200" MaxHeight="200"/>
+
+			<ScrollViewer MaxHeight="275">
+				<TextBlock Text="{Binding OsTanDesc}"/>
+			</ScrollViewer>
+
+			<Button Content="➡️" Command="{Binding SetForwardButtonCommand}"/>
+
+		</StackPanel>
 		
         <Button
             Command="{Binding SetDownloadButtonCommand}"
