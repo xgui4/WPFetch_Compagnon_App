@@ -19,30 +19,40 @@
     </Design.DataContext>
 
     <StackPanel>
-        <TextBlock
-            FontSize="30"
-            HorizontalAlignment="Center"
-            Text="Welcome to WPFetch OS-Tan Collection!"
-            VerticalAlignment="Center" />
-		
-        <Image
-            HorizontalAlignment="Center"
-            MaxHeight="100"
-            MaxWidth="100"
-            Source="/Assets/appicon.ico"
-            VerticalAlignment="Center" />
-		
-        <TextBlock
-            FontSize="50"
-            HorizontalAlignment="Center"
-            Text="This app is a work in progress"
-            VerticalAlignment="Center" />
+		<TextBlock
+			FontSize="30"
+			HorizontalAlignment="Center"
+			Text="Welcome to WPFetch OS-Tan Collection!"
+			VerticalAlignment="Center" />
 
-		<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+		<Image
+			HorizontalAlignment="Center"
+			MaxHeight="100"
+			MaxWidth="100"
+			Source="/Assets/appicon.ico"
+			VerticalAlignment="Center" />
 
-			<Button Content="⬅" Command="{Binding SetBackwardButtonCommand}"/>
+		<TextBlock
+			FontSize="50"
+			HorizontalAlignment="Center"
+			Text="This app is a work in progress"
+			VerticalAlignment="Center" />
 
-			<Image Source="{Binding OsTanImg}" MaxWidth="200" MaxHeight="200"/>
+		<StackPanel
+			Orientation="Horizontal" 
+			VerticalAlignment="Center" 
+			HorizontalAlignment="Center" 
+			Margin="20">
+
+			<Button
+				Content="⬅" 
+				Command="{Binding SetBackwardButtonCommand}"
+				/>
+
+			<Image 
+				Source="{Binding OsTanImg}" 
+				MaxWidth="200" 
+				MaxHeight="200"/>
 
 			<ScrollViewer MaxHeight="275">
 				<TextBlock Text="{Binding OsTanDesc}"/>
@@ -51,12 +61,11 @@
 			<Button Content="➡️" Command="{Binding SetForwardButtonCommand}"/>
 
 		</StackPanel>
-		
-        <Button
-            Command="{Binding SetDownloadButtonCommand}"
-            Content="Download the Windows Version!"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center" />
-		
+
+		<Button
+			Command="{Binding SetDownloadButtonCommand}"
+			Content="Download the Windows Version!"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center" />
     </StackPanel>
 </UserControl>

@@ -57,7 +57,7 @@ namespace wpfetch_compagnon_app.ViewModels
         private string osTanDesc;
 
         [ObservableProperty]
-        private Bitmap osTanImg;
+        private Bitmap? osTanImg;
 
         [ObservableProperty]
         private int _index = 0;
