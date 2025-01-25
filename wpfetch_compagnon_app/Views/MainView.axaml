@@ -38,7 +38,7 @@
             Text="This app is a work in progress"
             VerticalAlignment="Center" />
 
-        <local:MainInfoBox />
+        <local:OsTanCollection />
 		
         <Button
             Command="{Binding SetDownloadButtonCommand}"

@@ -11,16 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <AvaloniaResource Remove="Assets\win10.txt" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Include="Assets\win10.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Content>
-    </ItemGroup>
-
-    <ItemGroup>
         <PackageReference Include="Avalonia" />
         <PackageReference Include="Avalonia.Themes.Fluent" />
         <PackageReference Include="Avalonia.Fonts.Inter" />
@@ -34,10 +24,18 @@
 
     <ItemGroup>
       <AvaloniaResource Update="Assets\appicon.ico">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </AvaloniaResource>
       <AvaloniaResource Update="Assets\win10.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </AvaloniaResource>
+      <AvaloniaResource Update="Assets\win10.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </AvaloniaResource>
     </ItemGroup>
+
+	<ItemGroup>
+		<AvaloniaResource Include="Assets\**\*" />
+	</ItemGroup>
+
 </Project>
