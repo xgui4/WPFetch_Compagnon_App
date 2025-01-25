@@ -6,7 +6,7 @@ using Avalonia.Android;
 namespace wpfetch_compagnon_app.Android;
 
 [Activity(
-    Label = "wpfetch_compagnon_app.Android",
+    Label = "WPFetch : OS-Tan Collection",
     Theme = "@style/MyTheme.NoActionBar",
     Icon = "@drawable/icon",
     MainLauncher = true,

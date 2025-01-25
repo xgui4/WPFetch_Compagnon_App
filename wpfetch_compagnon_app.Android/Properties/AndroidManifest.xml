@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="net.xgui4.wpfetch_compagnon_app" android:versionName="0.0.0.1">
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="wpfetch_compagnon_app" android:icon="@drawable/Icon" />
+	<application android:label="WPFetch : OS-Tan Collection" />
 </manifest>

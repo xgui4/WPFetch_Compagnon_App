@@ -9,9 +9,9 @@ namespace wpfetch_compagnon_app.ViewModels;
 public partial class MainViewModel : ObservableObject
 {
     [RelayCommand]
-    private async Task SetDownloadButtonAsync()
+    private void SetDownloadButton()
     {
-        string url = "https://github.com/xgui4/WPFetch/releases"; 
+        string url = "https://github.com/xgui4/WPFetch/releases";
         if (OperatingSystem.IsWindows() || OperatingSystem.IsLinux() || OperatingSystem.IsMacOS())
             try
             {
@@ -25,10 +25,12 @@ public partial class MainViewModel : ObservableObject
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
-        else if (OperatingSystem.IsAndroid()) {
+        else if (OperatingSystem.IsAndroid())
+        {
             Console.WriteLine("This feature isnt available yet in mobile !");
         }
-        else if (OperatingSystem.IsBrowser()) {
+        else if (OperatingSystem.IsBrowser())
+        {
             Console.WriteLine("This feature isnt available yet in the browser !");
         }
     }
