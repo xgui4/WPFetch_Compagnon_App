@@ -7,7 +7,7 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:local="clr-namespace:wpfetch_compagnon_app"
+    xmlns:local="clr-namespace:wpfetch_compagnon_app"
     xmlns:vm="clr-namespace:wpfetch_compagnon_app.ViewModels"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Design.DataContext>
@@ -18,54 +18,61 @@
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <StackPanel>
-		<TextBlock
-			FontSize="30"
-			HorizontalAlignment="Center"
-			Text="Welcome to WPFetch OS-Tan Collection!"
-			VerticalAlignment="Center" />
+	<Viewbox>
+		<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"></RowDefinition>
+				<RowDefinition Height="Auto"></RowDefinition>
+				<RowDefinition Height="Auto"></RowDefinition>
+			</Grid.RowDefinitions>
+			<StackPanel Grid.Column="0" Grid.Row="0">
+				<TextBlock
+			        FontSize="30"
+				    FontWeight="ExtraBold"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="{Binding TitleLabel}"/>
 
-		<Image
-			HorizontalAlignment="Center"
-			MaxHeight="100"
-			MaxWidth="100"
-			Source="/Assets/appicon.ico"
-			VerticalAlignment="Center" />
+				<Image
+                    HorizontalAlignment="Center"
+			        MaxHeight="100"
+			        MaxWidth="100"
+                    Source="/Assets/appicon.ico"
+                    VerticalAlignment="Center"/>
 
-		<TextBlock
-			FontSize="50"
-			HorizontalAlignment="Center"
-			Text="This app is a work in progress"
-			VerticalAlignment="Center" />
+				<TextBlock
+                    FontStyle="Oblique"
+                    HorizontalAlignment="Center"
+                    Text="{Binding WarningLabel}"
+                    VerticalAlignment="Center"/>
+			</StackPanel>
 
-		<StackPanel
-			Orientation="Horizontal" 
-			VerticalAlignment="Center" 
-			HorizontalAlignment="Center" 
-			Margin="20">
+			<StackPanel Grid.Column="0" Grid.Row="1">
+				<StackPanel
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="20">
 
-			<Button
-				Content="⬅" 
-				Command="{Binding SetBackwardButtonCommand}"
-				/>
+					<Image Source="{Binding OsTanImg}" MaxWidth="200" MaxHeight="200"/>
 
-			<Image 
-				Source="{Binding OsTanImg}" 
-				MaxWidth="200" 
-				MaxHeight="200"/>
+					<ScrollViewer Height="275">
+						<TextBlock Text="{Binding OsTanDesc}"/>
+					</ScrollViewer>
+				</StackPanel>
 
-			<ScrollViewer MaxHeight="275">
-				<TextBlock Text="{Binding OsTanDesc}"/>
-			</ScrollViewer>
+				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+					<Button Name="BackwardButton" Content="" Command="{Binding SetBackwardButtonCommand}"/>
+					<Button Name="ForwardButton" Content="" Command="{Binding SetForwardButtonCommand}"/>
+				</StackPanel>
 
-			<Button Content="➡️" Command="{Binding SetForwardButtonCommand}"/>
-
-		</StackPanel>
-
-		<Button
-			Command="{Binding SetDownloadButtonCommand}"
-			Content="Download the Windows Version!"
-			HorizontalAlignment="Center"
-			VerticalAlignment="Center" />
-    </StackPanel>
+				<Button
+                    Grid.Column="0" Grid.Row="2"
+                    Command="{Binding SetDownloadButtonCommand}"
+                    Content="Download the Windows Version!"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+			</StackPanel>
+		</Grid>
+	</Viewbox>
 </UserControl>

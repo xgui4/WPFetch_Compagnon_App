@@ -54,6 +54,12 @@ namespace wpfetch_compagnon_app.ViewModels
         }
 
         [ObservableProperty]
+        private string titleLabel = "Welcome to WPFetch: OS-Tan Collection!";
+
+        [ObservableProperty]
+        private string warningLabel = "This app is a work in progress!";
+
+        [ObservableProperty]
         private string osTanDesc;
 
         [ObservableProperty]
