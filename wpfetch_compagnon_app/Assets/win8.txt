@@ -1,28 +1,21 @@
 ﻿        OS : Windows 8
-        Info : 
-        Yu & Ai are the Microsoft Japan mascots for Windows 8,  which first appeared in an 
-        article about the two mascots for Windows 8 on October 11th, 2012. Before this article, 
-        one can see the silhouette of Yu Madobe at the end of a music video entitled Through 
-        The Window by MasatakaP and Electrocutica, that was the opener for Microsoft Developer Days 
-        in japan, and which stars Claudia Madobe,with a quick appearance by Nanami Madobe at the end 
-        shortly before the silhouette is seen.
+        
+        placeholder
 
-        Not much about these -tans are known, such as personality, or height, etc... only time will 
-        yield that information.
+        Nam non sem posuere, porta diam sit amet, lobortis felis. Phasellus nec rhoncus nibh. Class aptent taciti 
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque tincidunt, dolor nec 
+        dictum lacinia, turpis sapien imperdiet eros, nec mollis lorem diam id ligula. In sed leo tristique, 
+        tincidunt quam ac, laoreet massa. Suspendisse nec eleifend sem. Ut finibus finibus libero, et tristique 
+        sem maximus in. Duis nec elementum lacus, lobortis luctus augue. Orci varius natoque penatibus et magnis 
+        dis parturient montes, nascetur ridiculus mus.
 
-        Theory
+        Curabitur vitae tortor turpis. Nunc condimentum vel mauris a mollis. Ut in dui porttitor, condimentum ipsum et, 
+        dignissim diam. Donec eget interdum justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
+        cubilia curae; Nam enim tellus, volutpat vitae molestie non, tincidunt nec mauris. In eu orci efficitur urna feugiat 
+        venenatis. In eleifend ac enim vitae fringilla. Donec ultrices commodo mi, sit amet mollis arcu laoreet placerat. 
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tristique lacinia diam, at accumsan magna malesuada at.
 
-        (NOTE: This is not OSC canon and is theory by an OSC user. Take information with a grain of salt...)
-
-        It is possible that Yu represents Windows RT while Ai represents Windows 8. Reason this is possible 
-        is because Ai being older than Yu, combined with the similar appearances, and Yu's more moe poses and 
-        appearance compared to Ai's more professional and serious poses, could be a reference to Windows RT 
-        and Windows 8, with 8 Being the oldest and more professional (having beta releases before its official
-        release), and Windows RT being a tablet OS with the same UI as Windows 8, but having no x86 application
-        support and only usable on ARM devices, making it more of a os to play with than something for professional
-        work (despite being bundled with Office RT).
-
-        In Japan, one can buy 2 special editions of Windows 8 DSP which includes theme packs for Yu or Ai, 
-        as well as the accompanying sounds. Furthermore, in the Akihabara shopping district one can by a limited 
-        edition of these versions of Windows 8 DSP that include extra voices not contained in the regular Yu & Ai editions, 
-        as well as the Microsoft Wedge Mouse included will have an illustration on it of either Yu or Ai. 
+        Nulla aliquam volutpat sem, et porttitor nisi egestas nec. Quisque vel purus diam. Phasellus viverra fermentum ex et iaculis. 
+        Curabitur nec maximus elit, ac commodo erat. Aliquam congue porta ultricies. Orci varius natoque penatibus et magnis dis parturient 
+        montes, nascetur ridiculus mus. Etiam hendrerit lacus augue, vitae bibendum urna gravida et. Aliquam tempor eros ut leo sagittis, 
+        quis dapibus massa rutrum. Curabitur maximus orci nec justo maximus, eu aliquam neque volutpat. 
