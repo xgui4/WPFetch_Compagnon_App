@@ -43,6 +43,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AvaloniaResource Update="Assets\win10.md">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </AvaloniaResource>
+	  <AvaloniaResource Update="Assets\win8.md">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </AvaloniaResource>
 	  <AvaloniaResource Update="Assets\win8.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </AvaloniaResource>

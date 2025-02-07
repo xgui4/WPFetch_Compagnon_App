@@ -1,21 +1,23 @@
-﻿        OS : Windows 8
-        
-        placeholder
+﻿# Windows 8 
 
-        Nam non sem posuere, porta diam sit amet, lobortis felis. Phasellus nec rhoncus nibh. Class aptent taciti 
-        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque tincidunt, dolor nec 
-        dictum lacinia, turpis sapien imperdiet eros, nec mollis lorem diam id ligula. In sed leo tristique, 
-        tincidunt quam ac, laoreet massa. Suspendisse nec eleifend sem. Ut finibus finibus libero, et tristique 
-        sem maximus in. Duis nec elementum lacus, lobortis luctus augue. Orci varius natoque penatibus et magnis 
-        dis parturient montes, nascetur ridiculus mus.
+## General Information : 
+Common Names : Windows 8-tan
+Other Names : 8-tan, Metro
+Name(s)	: Madobe Yū, Madobe Ai 
+Faction : Windows Family
+Lineage : Windows NT
+Hair Color : Copper blonde
+Eye Color : Blue 
+Article : https://www.animenewsnetwork.com/interest/2012-10-11/microsoft-windows-8-2-new-japanese-moe-mascots-revealed
+Video : https://www.youtube.com/watch?v=ydJinL8Ln3Q
+Windows 8 DSP Version : 1 for Yu and 1 for Ai and a OS-Tan theme version of the MS Wedge Mouse with Yu or Ai
 
-        Curabitur vitae tortor turpis. Nunc condimentum vel mauris a mollis. Ut in dui porttitor, condimentum ipsum et, 
-        dignissim diam. Donec eget interdum justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-        cubilia curae; Nam enim tellus, volutpat vitae molestie non, tincidunt nec mauris. In eu orci efficitur urna feugiat 
-        venenatis. In eleifend ac enim vitae fringilla. Donec ultrices commodo mi, sit amet mollis arcu laoreet placerat. 
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tristique lacinia diam, at accumsan magna malesuada at.
+## Technical Information
+First Appearance : 2012-10-11 
+System Personified : Windows 8
+Developer(s) : Microsoft
+Debut : 2012-08-01
+Latest release : 6.3.9600 (8.1)
 
-        Nulla aliquam volutpat sem, et porttitor nisi egestas nec. Quisque vel purus diam. Phasellus viverra fermentum ex et iaculis. 
-        Curabitur nec maximus elit, ac commodo erat. Aliquam congue porta ultricies. Orci varius natoque penatibus et magnis dis parturient 
-        montes, nascetur ridiculus mus. Etiam hendrerit lacus augue, vitae bibendum urna gravida et. Aliquam tempor eros ut leo sagittis, 
-        quis dapibus massa rutrum. Curabitur maximus orci nec justo maximus, eu aliquam neque volutpat. 
+## More Info about Windows 8 : https://en.wikipedia.org/wiki/Windows_8
+## Source : https://www.ostan-collections.net/wiki/index.php/Windows_8
