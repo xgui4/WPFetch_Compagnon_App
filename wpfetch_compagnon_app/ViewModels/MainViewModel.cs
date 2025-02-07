@@ -8,12 +8,14 @@ using Avalonia.Platform;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using wpfetch_compagnon_app.Models;
+using wpfetch_compagnon_app.Services;
 
 namespace wpfetch_compagnon_app.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
-        private static ObservableCollection<OsTan>? osTans;
+        private static readonly UriService UriService = new UriService();
+        private static ObservableCollection<OsTan>? OsTans;
 
         public MainViewModel()
         {
@@ -21,8 +23,8 @@ namespace wpfetch_compagnon_app.ViewModels
             string win8TanDescription; 
             try
             {
-                using var win10Desc = AssetLoader.Open(new Uri("avares://wpfetch_compagnon_app/Assets/win10.txt"));
-                using var win8Desc = AssetLoader.Open(new Uri("avares://wpfetch_compagnon_app/Assets/win8.txt"));
+                using var win10Desc = AssetLoader.Open(UriService.GetUri("win10.txt"));
+                using var win8Desc = AssetLoader.Open(UriService.GetUri("win8.txt"));
                 using var win10reader = new StreamReader(win10Desc);
                 using var win8reader = new StreamReader(win8Desc);
                 win10TanDescription = win10reader.ReadToEnd() ?? "N/A";
@@ -35,13 +37,13 @@ namespace wpfetch_compagnon_app.ViewModels
                 win8TanDescription = "Error while parsing information"; 
             }
 
-            osTans = new ObservableCollection<OsTan>
+            OsTans = new ObservableCollection<OsTan>
             {
-                new("Madobe Touko (窓辺 とうこ)", win10TanDescription, "avares://wpfetch_compagnon_app/Assets/win10.png"),
-                new("Madobe Yu & Madobe Ai", win8TanDescription, "avares://wpfetch_compagnon_app/Assets/win8.png")
+                new("Madobe Touko (窓辺 とうこ)", win10TanDescription, UriService.GetUriString("win10.png")),
+                new("Madobe Yu & Madobe Ai", win8TanDescription, UriService.GetUriString("win8.png"))
             };
-            osTanDesc = osTans[Index].Description ?? "N/A";
-            string temp = osTans[Index].Image ?? "avares://wpfetch_compagnon_app/Assets/win10.png";
+            osTanDesc = OsTans[Index].Description ?? "N/A";
+            string temp = OsTans[Index].Image ?? UriService.GetUriString("win10.png");
             try
             {
                 using var imageStream = AssetLoader.Open(new Uri(temp));
@@ -72,7 +74,7 @@ namespace wpfetch_compagnon_app.ViewModels
         private void SetBackwardButton()
         {
             Console.WriteLine("-------------------------------- Backward Button Pressed !! -----------------------");
-            if (Index == 0) Index = (int)(osTans?.Count - 1 ?? 0);
+            if (Index == 0) Index = (int)(OsTans?.Count - 1 ?? 0);
             else Index--;
             UpdateMainInfoBox();
         }
@@ -81,7 +83,7 @@ namespace wpfetch_compagnon_app.ViewModels
         private void SetForwardButton()
         {
             Console.WriteLine("-------------------------------- Forward Button Pressed !! -----------------------");
-            if (Index + 1 == osTans?.Count) Index = 0; 
+            if (Index + 1 == OsTans?.Count) Index = 0; 
             else Index++;
             UpdateMainInfoBox();
         }
@@ -115,8 +117,8 @@ namespace wpfetch_compagnon_app.ViewModels
 
         private void UpdateMainInfoBox()
         {
-            OsTanDesc = osTans?[Index].Description ?? "N/A";
-            string temp = osTans?[Index].Image ?? "avares://wpfetch_compagnon_app/Assets/win10.png";
+            OsTanDesc = OsTans?[Index].Description ?? "N/A";
+            string temp = OsTans?[Index].Image ?? UriService.GetUriString("win10.png");
             try
             {
                 using var imageStream = AssetLoader.Open(new Uri(temp));
