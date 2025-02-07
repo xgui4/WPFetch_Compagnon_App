@@ -20,6 +20,7 @@
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
         <PackageReference Include="CommunityToolkit.Mvvm" />
+        <PackageReference Include="Markdown.Avalonia" />
     </ItemGroup>
 
     <ItemGroup>
@@ -27,9 +28,6 @@
         <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </AvaloniaResource>
       <AvaloniaResource Update="Assets\win10.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AvaloniaResource>
-      <AvaloniaResource Update="Assets\win10.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </AvaloniaResource>
     </ItemGroup>
@@ -50,9 +48,6 @@
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </AvaloniaResource>
 	  <AvaloniaResource Update="Assets\win8.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </AvaloniaResource>
-	  <AvaloniaResource Update="Assets\win8.txt">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </AvaloniaResource>
 	</ItemGroup>

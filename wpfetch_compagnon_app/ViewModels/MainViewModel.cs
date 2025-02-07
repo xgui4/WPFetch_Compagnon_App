@@ -23,8 +23,8 @@ namespace wpfetch_compagnon_app.ViewModels
             string win8TanDescription; 
             try
             {
-                using var win10Desc = AssetLoader.Open(UriService.GetUri("win10.txt"));
-                using var win8Desc = AssetLoader.Open(UriService.GetUri("win8.txt"));
+                using var win10Desc = AssetLoader.Open(UriService.GetUri("win10.md"));
+                using var win8Desc = AssetLoader.Open(UriService.GetUri("win8.md"));
                 using var win10reader = new StreamReader(win10Desc);
                 using var win8reader = new StreamReader(win8Desc);
                 win10TanDescription = win10reader.ReadToEnd() ?? "N/A";

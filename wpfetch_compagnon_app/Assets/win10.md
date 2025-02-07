@@ -1,19 +1,19 @@
 ﻿# Windows 10
 
 ## General Information : 
-**Common OS-Tan Name** : Windows 10-tan 
-**Name** : Madobe Tōko (窓辺 とうこ) 
-**Faction** : Windows
-**Lineage** : Windows NT 
-**Hair Color** : White
-**Eye Color** : Ice Blue 
-**First Appearance** : 2015-05-xx 
+- **Common OS-Tan Name** : Windows 10-tan 
+- **Name** : Madobe Tōko (窓辺 とうこ) 
+- **Faction** : Windows
+- **Lineage** : Windows NT 
+- **Hair Color** : White
+- **Eye Color** : Ice Blue 
+- **First Appearance** : 2015-05-xx 
 
 ## Technical Information :
-**System Personified** : Windows 10
-**Developer(s)** : Microsoft
-**Debut** : 2015-07-29
-**Latest release** : 22H2
+- **System Personified** : Windows 10
+- **Developer(s)** : Microsoft
+- **Debut** : 2015-07-29
+- **Latest release** : 22H2
 
 ## Other Information : 
 * Age : 17

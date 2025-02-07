@@ -9,7 +9,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:wpfetch_compagnon_app"
     xmlns:vm="clr-namespace:wpfetch_compagnon_app.ViewModels"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:md="https://github.com/whistyun/Markdown.Avalonia">
     <Design.DataContext>
         <!--
             This only sets the DataContext for the previewer in an IDE,
@@ -55,10 +56,10 @@
                     Margin="20">
 
 					<Image Source="{Binding OsTanImg}" MaxWidth="200" MaxHeight="200"/>
-
-					<ScrollViewer Height="275">
-						<TextBlock Text="{Binding OsTanDesc}"/>
-					</ScrollViewer>
+					
+					<md:MarkdownScrollViewer
+					   Markdown="{Binding OsTanDesc}"/>
+					
 				</StackPanel>
 
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
